@@ -10,7 +10,7 @@ def minimumCharactersForWords(words):
 				charCount[letter] = 1
 		for letter in charCount:
 			if letter not in minChar:
-				minChar[letter] = 1
+				minChar[letter] = charCount[letter]
 			elif minChar[letter] < charCount[letter]:
 				minChar[letter] = charCount[letter]
 	
